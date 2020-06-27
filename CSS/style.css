@@ -1,0 +1,446 @@
+/*Start Our Framework*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+.table{
+    height: 100%;
+    display: table;
+}
+.table-raw{
+    display: table-row;
+}
+.text-center{
+    text-align: center;
+}
+.upper{
+    text-transform: uppercase;
+}
+.main-color{
+    color: #f7600e;
+}
+.background-color{
+    background-color: #f7600e;
+}
+.overlay{
+    background-color: #3e3f48eb;
+    height: 100%;
+    width: 100%
+}
+.hidden{
+    display: none;
+}
+
+/*End Our Framework*/
+
+/*Start header*/
+
+.header{
+    background: url('../img/header.jpeg');
+    background-size: cover;
+}
+
+.header .navbar{
+    overflow: hidden;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+        
+}
+.header .navbar .links{
+    float: right;
+}
+.header .navbar .links i{
+    margin-left: 10px;
+}
+.header .intro h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+.header .intro p{
+    margin: 5px 0 40px;
+    line-height: 1.9;
+    font-size: 20px;
+    color: #b8b8b8;
+}
+
+.header .buttons button{
+    background-color: transparent;
+    padding: 10px 0;
+    width: 180px;
+    margin:  0 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    border: 0.5px solid #909090;
+    transition: all 0.5s ease-in-out;
+}
+.header .buttons button:hover{
+    background-color: #f7600e;
+    border-color: #f7600e;
+}
+.header .arrow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+}
+.header .arrow i{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+/*end header*/
+
+/*start features*/
+
+.features{
+    padding: 90px 0;
+    overflow: hidden;
+}
+.features .box{
+    width: 22%;
+    float: left;
+    margin: 0 1.5%;
+
+}
+.features .box i{
+    border: 1px solid #909090;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    transition: all 0.5s ease-in-out;
+}
+.features .box i:hover{
+    background-color: #f7600e;
+    color:#fff;
+    border: 1px solid #f7600e;
+}
+.features .box h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #676767;
+}
+.features .box p{
+    line-height: 2;
+    color: #666;
+}
+
+/*end features*/
+
+
+/*start subscribe*/
+
+.subscribe{
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+}
+.subscribe form{
+    padding: 80px 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.subscribe form input[type="email"]{
+    padding: 10px;
+    font-size: 15px;
+    width: 500px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: text;
+}
+.subscribe form button{
+    color: #fff;
+    padding: 10px 80px;
+    font-size: 15px;
+    border: 2px solid #f7600e;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: all .5s ease-in-out;
+}
+.subscribe form button:hover{
+    color: #f7600e;
+    background-color: #fff;
+}
+/*end subscribe*/
+
+/*start our work*/
+
+.our-work{
+    padding: 50px 0;
+}
+.our-work h2{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.our-work ~ p{
+    line-height: 2;
+    margin: 10px 0 40px;
+}
+.our-work button{
+    color: #666;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: 2px solid #666;
+    border-radius: 10px;
+    margin: 40px 0 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.our-work button:hover{
+    color: #fff;
+    background-color: #f7600e;
+    border: 2px solid #f7600e;
+}
+.our-work .item-box{
+    overflow: hidden;
+}
+.our-work .item-box .item{
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 300px;
+    margin: 1.3%;
+    float: left;
+    border-radius: 10px;
+}
+.our-work .item-box .item:hover .over{
+    display: block;
+}
+.our-work .item-box .item img{
+    height: 100%;
+}
+.our-work .item-box .item .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247 , 96, 14, 0.8);
+    color: #fff;
+    display: none;
+    transition: all .5s ease-in-out;
+}
+.our-work .item-box .item .over h4{
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.our-work .item-box .item .over button{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 20px 0 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.our-work .item-box .item .over button:hover{
+    background-color: #fff;
+    color: #f7600e;
+}
+
+/*start our work*/
+
+/*start testim*/
+
+.testim{
+    background-image: url('../img/test.jpg');
+    background-size: cover;
+}
+.testim .client{
+    padding: 50px 0;
+    color: #fff;
+    font-size:18px;
+}
+.testim .client p{
+    line-height: 2;
+    font-style: italic;    
+}
+.testim .client img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px
+}
+.testim .fa-chevron-right,
+.testim .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    color: #999;
+    cursor: pointer;
+}
+.testim .fa-chevron-right:hover,
+.testim .fa-chevron-left:hover{
+    color: #f7600e;
+}
+.testim .fa-chevron-right{
+    right: 0;
+}
+.testim .fa-chevron-left{
+    left: 0;
+}
+
+/*end testim*/
+
+/*start our team*/
+
+.our-team h2{
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.our-team .p{
+    line-height: 2;
+    margin: 10px 0 40px;
+}
+.our-team .the-team{
+    overflow: hidden;
+}
+.our-team .the-team .person{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    overflow: hidden;
+    color: #888;
+    transition: all .5s ease-in-out;
+}
+.our-team .the-team .person:hover img{
+    filter: none;
+    border-bottom: 4px solid #f7600e;
+}
+.our-team .the-team .person:hover{
+    color: #555;
+    transform: scaley(1.1)
+}
+.our-team .the-team .person:hover .social-icons .fa-facebook-f{
+    background-color: #3b5998;
+}
+.our-team .the-team .person:hover .social-icons .fa-twitter{
+    background-color: #55acee;
+}
+.our-team .the-team .person:hover .social-icons .fa-google-plus-g{
+    background-color: #dc4e41;
+}
+.our-team .the-team .person img{
+    height: 270px;
+    width: 265px;
+    filter: gray;
+    filter: grayscale(1);
+    transition: all .5s ease-in-out;
+}
+.our-team .the-team .person p{
+    font-size: 15px;
+}
+.our-team .the-team .person .social-icons i{
+    background-color: #9da1a5;
+    width: 20px;
+    height: 20x;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+/*end our team*/
+
+/*start contact*/
+
+.contact form input[type="email"],
+.contact form input[type="text"]{
+    padding: 10px;
+    font-size: 15px;
+    width: 45%;
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    cursor: text;
+}
+.contact .overlay{
+    padding: 50px 0;
+    color: #fff;
+}
+.contact form button{
+    color: #fff;
+    padding: 10px 80px;
+    font-size: 15px;
+    border: 2px solid #f7600e;
+    border-radius: 10px;
+    margin: 5px 2%;
+    float: left;
+    transition: all .5s ease-in-out;
+}
+.contact form button:hover{
+    color: #f7600e;
+    background-color: #fff;
+}
+.contact form textarea{
+    width: 92% !important;
+    height: 200px !important;
+    border-radius: 10px;
+    padding: 20px
+}
+.contact .social-icons{
+    margin: 10px 2%;
+}
+.contact .social-icons i{
+    background-color: #9da1a5;
+    width: 20px;
+    height: 20x;
+    line-height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    float: right;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.contact .social-icons .fa-facebook-f{
+    background-color: #3b5998;
+}
+ .contact .social-icons .fa-twitter{
+    background-color: #55acee;
+}
+.contact .social-icons .fa-google-plus-g{
+    background-color: #dc4e41;
+}
+
+
+/*end contact*/
+
+
+/*start footer*/
+
+.footer{
+    background-color: #3d3e42;
+    padding: 40px 0;
+    color: #fff;
+}
+.footer .copyright{
+    float: left;
+}
+.footer .design{
+    float: right;
+}
+
+
+/*end footer*/
